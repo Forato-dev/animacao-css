@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(imagens/1576504-abstrato-ondulado-verde-fundo-vetor.jpg);
+    background-size: cover;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50vw;
+    height: 75vh;
+    background-color: #18861e;
+
+    border: 5px  solid #ffffff;
+    border-style: outset;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 12.5vh;
+    margin-bottom: 12.5vh;
+}
+
+#logo {
+    width: 15vw;
+    height: 22vw;
+}
+
+#escrita {
+    width: 33vw;
+    height: 23vh;
+    font-size: 29px;
+    color: #000000;
+}
+
+#quad1, #quad2, #quad3, #quad4, #quad5, #quad6, #quad7, #quad8, #quad9 {
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    border-radius: 9px;
+}
+#l1, #l2, #l3, #l4{
+    display: flex;
+}
+
+#l1 {
+    margin-bottom: 12px;
+}
+
+#l2 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#l3 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#l4 {
+    margin-top: 12px;
+}
+
+#circulo {
+    background-color: #b91f1f;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin-right: 6px;
+}
+
+#quad1 {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+#quad2 {
+    margin-left: 6px;
+}
+
+#quad3 {
+    margin-right: 6px;
+}
+
+#quad4 {
+    margin-left: 6px;
+}
+
+#quad5 {
+    margin-right: 6px;
+}
+
+#quad6 {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+#quad7 {
+    margin-left: 6px;
+}
+
+#quad8 {
+    margin-right: 6px;
+}
+
+#quad9 {
+    margin-left: 6px;
+}
+
+#sobre1 {
+    width: 10vw;
+    height: 10vh;
+    background-color: blue;
+}
