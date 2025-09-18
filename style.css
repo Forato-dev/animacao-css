@@ -15,15 +15,16 @@ body {
 
     width: 50vw;
     height: 75vh;
-    background-color: #18861e;
+    background-color: #ffffff;
 
-    border: 5px  solid #0f5012;
+    border: 5px  solid #ffffff;
     border-style: solid;
     border-radius: 10px;
     margin-left: 25vw;
     margin-right: 25vw;
     margin-top: 12.5vh;
     margin-bottom: 12.5vh;
+    animation: bord 3s linear 4s 1 forwards;
 }
 
 #logo {
@@ -36,6 +37,9 @@ body {
     height: 23vh;
     font-size: 29px;
     color: #ffffff;
+    opacity: 0%;
+
+    animation: escr 3s linear 6s 1 forwards;
 }
 
 #quad1, #quad2, #quad3, #quad4, #quad5, #quad6, #quad7, #quad8, #quad9 {
@@ -74,7 +78,7 @@ body {
     margin-right: 6px;
     translate: -40vw;
     position: relative;
-    animation: circle 6s linear 1s 1 forwards;
+    animation: circle 6s linear 0s 1 forwards;
 }
 
 #quad1 {
@@ -82,27 +86,27 @@ body {
     margin-right: 6px;
     translate: 0vw -50vh;
     position: relative;
-    animation: quad1 6s linear 1s 1 forwards;
+    animation: quad1 6s linear 0s 1 forwards;
 }
 
 #quad2 {
     margin-left: 6px;
     position: relative;
-    animation: quad2 6s linear 1s 1 forwards;
+    animation: quad2 6s linear 0s 1 forwards;
 }
 
 #quad3 {
     margin-right: 6px;
     translate: -30vw;
     position: relative;
-    animation: quad3 6s linear 1s 1 forwards;
+    animation: quad3 6s linear 0s 1 forwards;
 }
 
 #quad4 {
     margin-left: 6px;
     translate: 70vw;
     position: relative;
-    animation: quad4 6s linear 1s 1 forwards;
+    animation: quad4 6s linear 0s 1 forwards;
 }
 
 #quad5 {
@@ -110,7 +114,7 @@ body {
     translate: 0vw 50vh; 
     background-color: black;
     position: relative;
-    animation: quad5 6s linear 1s 1 forwards;
+    animation: quad5 6s linear 0s 1 forwards;
 }
 
 #quad6 {
@@ -118,26 +122,28 @@ body {
     margin-right: 6px;
     translate: 70vw;
     position: relative;
-    animation: quad6 6s linear 1s 1 forwards;
+    animation: quad6 6s linear 0s 1 forwards;
 }
 
 #quad7 {
     margin-left: 6px;
     translate: 30vw 25vh;
     position: relative;
-    animation: quad7 6s linear 1s 1 forwards;
+    animation: quad7 6s linear 0s 1 forwards;
 }
 
 #quad8 {
     margin-right: 6px;
-    background-color: black;
     translate: 80vw -70vh;
     position: relative;
-    animation: quad8 6s linear 1s 1 forwards;
+    animation: quad8 6s linear 0s 1 forwards;
 }
 
 #quad9 {
     margin-left: 6px;
+    translate: 80vw -70vh;
+    position: relative;
+    animation: quad9 6s linear 0s 1 forwards;
 }
 
 #sobre1 {
@@ -147,129 +153,135 @@ body {
 }
 
 @keyframes circle {
-    0%   {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px;}
-    20%  {background-color: #18861e; left: 25vw; top: -25vh; border-radius: 10px;}
-    30%  {background-color: #18861e; left: 25vw; top: 20vh; border-radius: 15px;}
-    40%  {background-color: #18861e; left: 75vw; top: 20vh; border-radius: 15px;}
-    50%  {background-color: #18861e; left: 90vw; top: -25vh; border-radius: 20px;}
-    60%  {background-color: #18861e; left: 90vw; top: 30vh; border-radius: 25px;}
-    70%  {background-color: #18861e; left: 50vw; top: 10vh; border-radius: 30px;}
-    80%  {background-color: #18861e; left: 65vw; top: -20vh; border-radius: 35px;}
-    90%  {background-color: #18861e; left: 40vw; top: -20vh; border-radius: 40px;}
-    95%  {background-color: #b91f1f; left: 40vw; top: 0vh; border-radius: 50px;}
-    100% {background-color: #b91f1f; left: 40vw; top: 0vh; border-radius: 50px;}
+    0%   {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px; transform: rotate(200deg);}
+    20%  {background-color: #18861e; left: 25vw; top: -25vh; border-radius: 10px; transform: rotate(400deg);}
+    30%  {background-color: #18861e; left: 25vw; top: 20vh; border-radius: 15px; transform: rotate(600deg);}
+    40%  {background-color: #18861e; left: 75vw; top: 20vh; border-radius: 15px; transform: rotate(800deg);}
+    50%  {background-color: #18861e; left: 90vw; top: -25vh; border-radius: 20px; transform: rotate(1000deg);}
+    60%  {background-color: #18861e; left: 90vw; top: 30vh; border-radius: 25px; transform: rotate(1200deg);}
+    70%  {background-color: #18861e; left: 50vw; top: 10vh; border-radius: 30px; transform: rotate(1400deg);}
+    80%  {background-color: #18861e; left: 65vw; top: -20vh; border-radius: 35px; transform: rotate(1600deg);}
+    90%  {background-color: #18861e; left: 40vw; top: -20vh; border-radius: 40px; transform: rotate(1800deg);}
+    95%  {background-color: #b91f1f; left: 40vw; top: 0vh; border-radius: 50px; transform: rotate(2000deg);}
+    100% {background-color: #b91f1f; left: 40vw; top: 0vh; border-radius: 50px; transform: rotate(0deg);}
 }
 
 @keyframes quad1 {
-    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px;}
-    20%   {background-color: #18861e; left: 20vw; top: 50vh; border-radius: 1px;}
-    40%   {background-color: #18861e; left: -40vw; top: 30vh; border-radius: 2px;}
-    50%   {background-color: #18861e; left: -20vw; top: 40vh; border-radius: 3px;}
-    60%   {background-color: #18861e; left: -20vw; top: 80vh; border-radius: 4px;}
-    70%   {background-color: #18861e; left: 50vw; top: 20vh; border-radius: 5px;}
-    80%   {background-color: #18861e; left: 40vw; top: 60vh; border-radius: 6px;}
-    90%   {background-color: #18861e; left: 35vw; top: 15vh; border-radius: 7px;}
-    100%  {background-color: #ffffff; left: 0vw; top: 50vh; border-radius: 9px;}
+    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px; transform: rotate(200deg);}
+    20%   {background-color: #18861e; left: 20vw; top: 50vh; border-radius: 1px; transform: rotate(400deg);}
+    40%   {background-color: #18861e; left: -40vw; top: 30vh; border-radius: 2px; transform: rotate(600deg);}
+    50%   {background-color: #18861e; left: -20vw; top: 40vh; border-radius: 3px; transform: rotate(800deg);}
+    60%   {background-color: #18861e; left: -20vw; top: 80vh; border-radius: 4px; transform: rotate(1000deg);}
+    70%   {background-color: #18861e; left: 50vw; top: 20vh; border-radius: 5px; transform: rotate(1200deg);} 
+    80%   {background-color: #18861e; left: 40vw; top: 60vh; border-radius: 6px; transform: rotate(1400deg);}
+    90%   {background-color: #18861e; left: 35vw; top: 15vh; border-radius: 7px; transform: rotate(1600deg);}
+    100%  {background-color: #ffffff; left: 0vw; top: 50vh; border-radius: 9px; transform: rotate(0deg);}
 }
 
 @keyframes quad2 {
-    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px;}
-    20%   {background-color: #18861e; left: 20vw; top: -20vh; border-radius: 1px;}
-    40%   {background-color: #18861e; left: -30vw; top: 30vh; border-radius: 2px;}
-    50%   {background-color: #18861e; left: 15vw; top: -15vh; border-radius: 3px;}
-    60%   {background-color: #18861e; left: -40vw; top: 40vh; border-radius: 4px;}
-    70%   {background-color: #18861e; left: 50vw; top: -50vh; border-radius: 5px;}
-    80%   {background-color: #18861e; left: 10vw; top: 10vh; border-radius: 6px;}
-    90%   {background-color: #18861e; left: -35vw; top: 35vh; border-radius: 7px;}
-    100%  {background-color: #ffffff; left: 0vw; top: 0vh; border-radius: 9px;}
+    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px; transform: rotate(200deg);}
+    20%   {background-color: #18861e; left: 20vw; top: -20vh; border-radius: 1px; transform: rotate(400deg);}
+    40%   {background-color: #18861e; left: -30vw; top: 30vh; border-radius: 2px;transform: rotate(600deg);}
+    50%   {background-color: #18861e; left: 15vw; top: -15vh; border-radius: 3px; transform: rotate(800deg);}
+    60%   {background-color: #18861e; left: -40vw; top: 40vh; border-radius: 4px; transform: rotate(1000deg);}
+    70%   {background-color: #18861e; left: 50vw; top: -50vh; border-radius: 5px; transform: rotate(1200deg);}
+    80%   {background-color: #18861e; left: 10vw; top: 10vh; border-radius: 6px; transform: rotate(1400deg);}
+    90%   {background-color: #18861e; left: -35vw; top: 35vh; border-radius: 7px; transform: rotate(1600deg);}
+    100%  {background-color: #ffffff; left: 0vw; top: 0vh; border-radius: 9px; transform: rotate(0deg);}
 }
 
 @keyframes quad3 {
-    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px;}
-    20%   {background-color: #18861e; left: 9vw; top: 0vh; border-radius: 1px;}
-    40%   {background-color: #18861e; left: 12vw; top: 0vh; border-radius: 2px;}
-    50%   {background-color: #18861e; left: 15vw; top: 0vh; border-radius: 3px;}
-    60%   {background-color: #18861e; left: 18vw; top: 0vh; border-radius: 4px;}
-    70%   {background-color: #18861e; left: 21vw; top: 0vh; border-radius: 5px;}
-    80%   {background-color: #18861e; left: 24vw; top: 0vh; border-radius: 6px;}
-    90%   {background-color: #18861e; left: 27vw; top: 0vh; border-radius: 7px;}
-    100%  {background-color: #ffffff; left: 30vw; top: 0vh; border-radius: 9px;}
+    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px; transform: rotate(200deg);}
+    20%   {background-color: #18861e; left: 9vw; top: 0vh; border-radius: 1px; transform: rotate(400deg);}
+    40%   {background-color: #18861e; left: 12vw; top: 0vh; border-radius: 2px; transform: rotate(600deg);}
+    50%   {background-color: #18861e; left: 15vw; top: 0vh; border-radius: 3px; transform: rotate(800deg);}
+    60%   {background-color: #18861e; left: 18vw; top: 0vh; border-radius: 4px; transform: rotate(1000deg);}
+    70%   {background-color: #18861e; left: 21vw; top: 0vh; border-radius: 5px; transform: rotate(1200deg);}
+    80%   {background-color: #18861e; left: 24vw; top: 0vh; border-radius: 6px; transform: rotate(1400deg);}
+    90%   {background-color: #18861e; left: 27vw; top: 0vh; border-radius: 7px; transform: rotate(1600deg);}
+    100%  {background-color: #ffffff; left: 30vw; top: 0vh; border-radius: 9px; transform: rotate(0deg);}
 }
 
 @keyframes quad4 {
-    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px;}
-    20%   {background-color: #18861e; left: -5vw; top: 0vh; border-radius: 1px;}
-    40%   {background-color: #18861e; left: -10vw; top: 0vh; border-radius: 2px;}
-    50%   {background-color: #18861e; left: -20vw; top: 0vh; border-radius: 3px;}
-    60%   {background-color: #18861e; left: -30vw; top: 0vh; border-radius: 4px;}
-    70%   {background-color: #18861e; left: -40vw; top: 0vh; border-radius: 5px;}
-    80%   {background-color: #18861e; left: -50vw; top: 0vh; border-radius: 6px;}
-    90%   {background-color: #18861e; left: -60vw; top: 0vh; border-radius: 7px;}
-    100%  {background-color: #ffffff; left: -70vw; top: 0vh; border-radius: 9px;}
+    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px; transform: rotate(200deg);}
+    20%   {background-color: #18861e; left: -5vw; top: 0vh; border-radius: 1px; transform: rotate(400deg);}
+    40%   {background-color: #18861e; left: -10vw; top: 0vh; border-radius: 2px; transform: rotate(600deg);}
+    50%   {background-color: #18861e; left: -20vw; top: 0vh; border-radius: 3px; transform: rotate(800deg);}
+    60%   {background-color: #18861e; left: -30vw; top: 0vh; border-radius: 4px; transform: rotate(1000deg);}
+    70%   {background-color: #18861e; left: -40vw; top: 0vh; border-radius: 5px; transform: rotate(1200deg);}
+    80%   {background-color: #18861e; left: -50vw; top: 0vh; border-radius: 6px; transform: rotate(1400deg);}
+    90%   {background-color: #18861e; left: -60vw; top: 0vh; border-radius: 7px; transform: rotate(1600deg);}
+    100%  {background-color: #ffffff; left: -70vw; top: 0vh; border-radius: 9px; transform: rotate(0deg);}
 }
 
 @keyframes quad5 {
-    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px;}
-    10%   {background-color: #18861e; left: 5px; top: -5vh; border-radius: 0px;}
-    20%   {background-color: #18861e; left: -5px; top: -10vh; border-radius: 0px;}
-    30%   {background-color: #18861e; left: 5vw; top: -15vh; border-radius: 1px;}
-    40%   {background-color: #18861e; left: -5vw; top: -20vh; border-radius: 2px;}
-    50%   {background-color: #18861e; left: 5vw; top: -25vh; border-radius: 3px;}
-    60%   {background-color: #18861e; left: -5vw; top: -30vh; border-radius: 4px;}
-    70%   {background-color: #18861e; left: 5vw; top: -35vh; border-radius: 5px;}
-    80%   {background-color: #18861e; left: -5vw; top: -40vh; border-radius: 6px;}
-    90%   {background-color: #18861e; left: 5vw; top: -45vh; border-radius: 7px;}
-    100%  {background-color: #ffffff; left: 0vw; top: -50vh; border-radius: 9px;}
+    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px; transform: rotate(200deg);}
+    10%   {background-color: #18861e; left: 5px; top: -5vh; border-radius: 0px; transform: rotate(400deg);}
+    20%   {background-color: #18861e; left: -5px; top: -10vh; border-radius: 0px; transform: rotate(600deg);}
+    30%   {background-color: #18861e; left: 5vw; top: -15vh; border-radius: 1px; transform: rotate(800deg);}
+    40%   {background-color: #18861e; left: -5vw; top: -20vh; border-radius: 2px; transform: rotate(1000deg);}
+    50%   {background-color: #18861e; left: 5vw; top: -25vh; border-radius: 3px; transform: rotate(1200deg);}
+    60%   {background-color: #18861e; left: -5vw; top: -30vh; border-radius: 4px; transform: rotate(1400deg);}
+    70%   {background-color: #18861e; left: 5vw; top: -35vh; border-radius: 5px; transform: rotate(1600deg);}
+    80%   {background-color: #18861e; left: -5vw; top: -40vh; border-radius: 6px; transform: rotate(1800deg);}
+    90%   {background-color: #18861e; left: 5vw; top: -45vh; border-radius: 7px; transform: rotate(2000deg);}
+    100%  {background-color: #ffffff; left: 0vw; top: -50vh; border-radius: 9px; transform: rotate(0deg);}
 }
 
 @keyframes quad6 {
-    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px;}
-    20%   {background-color: #18861e; left: -10vw; top: -20vh; border-radius: 1px;}
-    40%   {background-color: #18861e; left: -70vw; top: 40vh; border-radius: 2px;}
-    50%   {background-color: #18861e; left: -30vw; top: 40vh; border-radius: 3px;}
-    60%   {background-color: #18861e; left: -80vw; top: -50vh; border-radius: 4px;}
-    70%   {background-color: #18861e; left: -40vw; top: 20vh; border-radius: 5px;}
-    80%   {background-color: #18861e; left: -40vw; top: -40vh; border-radius: 6px;}
-    90%   {background-color: #18861e; left: -10vw; top: -10vh; border-radius: 7px;}
-    100%  {background-color: #ffffff; left: -70vw; top: 0vh; border-radius: 9px;}
+    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px; transform: rotate(200deg);}
+    20%   {background-color: #18861e; left: -10vw; top: -20vh; border-radius: 1px; transform: rotate(200deg);}
+    40%   {background-color: #18861e; left: -70vw; top: 40vh; border-radius: 2px; transform: rotate(400deg);}
+    50%   {background-color: #18861e; left: -30vw; top: 40vh; border-radius: 3px; transform: rotate(600deg);}
+    60%   {background-color: #18861e; left: -80vw; top: -50vh; border-radius: 4px; transform: rotate(800deg);}
+    70%   {background-color: #18861e; left: -40vw; top: 20vh; border-radius: 5px; transform: rotate(1000deg);}
+    80%   {background-color: #18861e; left: -40vw; top: -40vh; border-radius: 6px; transform: rotate(1200deg);}
+    90%   {background-color: #18861e; left: -10vw; top: -10vh; border-radius: 7px; transform: rotate(1400deg);}
+    100%  {background-color: #ffffff; left: -70vw; top: 0vh; border-radius: 9px; transform: rotate(0deg);}
 }
 
 @keyframes quad7 {
-    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px;}
-    20%   {background-color: #18861e; left: -2vw; top: -4vh; border-radius: 1px;}
-    40%   {background-color: #18861e; left: -6vw; top: -7vh; border-radius: 2px;}
-    50%   {background-color: #18861e; left: -10vw; top: -10vh; border-radius: 3px;}
-    60%   {background-color: #18861e; left: -14vw; top: -13vh; border-radius: 4px;}
-    70%   {background-color: #18861e; left: -18vw; top: -16vh; border-radius: 5px;}
-    80%   {background-color: #18861e; left: -22vw; top: -19vh; border-radius: 6px;}
-    90%   {background-color: #18861e; left: -26vw; top: -22vh; border-radius: 7px;}
-    100%  {background-color: #ffffff; left: -30vw; top: -25vh; border-radius: 9px;}    
+    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px; transform: rotate(200deg);}
+    20%   {background-color: #18861e; left: -2vw; top: -4vh; border-radius: 1px; transform: rotate(200deg);}
+    40%   {background-color: #18861e; left: -6vw; top: -7vh; border-radius: 2px; transform: rotate(400deg);}
+    50%   {background-color: #18861e; left: -10vw; top: -10vh; border-radius: 3px; transform: rotate(600deg);}
+    60%   {background-color: #18861e; left: -14vw; top: -13vh; border-radius: 4px; transform: rotate(800deg);}
+    70%   {background-color: #18861e; left: -18vw; top: -16vh; border-radius: 5px; transform: rotate(1000deg);}
+    80%   {background-color: #18861e; left: -22vw; top: -19vh; border-radius: 6px; transform: rotate(1200deg);}
+    90%   {background-color: #18861e; left: -26vw; top: -22vh; border-radius: 7px; transform: rotate(1400deg);}
+    100%  {background-color: #ffffff; left: -30vw; top: -25vh; border-radius: 9px; transform: rotate(0deg);}    
 }
 
 @keyframes quad8 {
-    0%    {background-color: black; left: 0px; top: 0px; border-radius: 0px;}
-    20%   {background-color: black; left: -47vw; top: 40vh; border-radius: 1px;}
-    40%   {background-color: black; left: -95vw; top: 80vh; border-radius: 2px;}
-    50%   {background-color: black; left: -20vw; top: 80vh; border-radius: 3px;}
-    60%   {background-color: black; left: -40vw; top: 80vh; border-radius: 4px;}
-    70%   {background-color: black; left: -60vw; top: 80vh; border-radius: 5px;}
-    80%   {background-color: black; left: -40vw; top: 20vh; border-radius: 6px;}
-    90%   {background-color: black; left: -60vw; top: 50vh; border-radius: 7px;}
-    100%  {background-color: #ffffff; left: -80vw; top: 70vh; border-radius: 9px;}
+    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px; transform: rotate(200deg);}
+    20%   {background-color: #18861e; left: -47vw; top: 40vh; border-radius: 1px; transform: rotate(200deg);}
+    40%   {background-color: #18861e; left: -95vw; top: 80vh; border-radius: 2px; transform: rotate(400deg);}
+    50%   {background-color: #18861e; left: -20vw; top: 80vh; border-radius: 3px; transform: rotate(600deg);}
+    60%   {background-color: #18861e; left: -40vw; top: 80vh; border-radius: 4px; transform: rotate(800deg);}
+    70%   {background-color: #18861e; left: -60vw; top: 80vh; border-radius: 5px; transform: rotate(1000deg);}
+    80%   {background-color: #18861e; left: -40vw; top: 20vh; border-radius: 6px; transform: rotate(1200deg);}
+    90%   {background-color: #18861e; left: -60vw; top: 50vh; border-radius: 7px; transform: rotate(1400deg);}
+    100%  {background-color: #ffffff; left: -80vw; top: 70vh; border-radius: 9px; transform: rotate(0deg);}
 }
 
 @keyframes quad9 {
-    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px;}
-    20%   {background-color: #18861e; left: vw; top: vh; border-radius: 1px;}
-    40%   {background-color: #18861e; left: vw; top: vh; border-radius: 2px;}
-    50%   {background-color: #18861e; left: vw; top: vh; border-radius: 3px;}
-    60%   {background-color: #18861e; left: vw; top: vh; border-radius: 4px;}
-    70%   {background-color: #18861e; left: vw; top: vh; border-radius: 5px;}
-    80%   {background-color: #18861e; left: vw; top: vh; border-radius: 6px;}
-    90%   {background-color: #18861e; left: vw; top: vh; border-radius: 7px;}
-    100%  {background-color: #ffffff; left: vw; top: vh; border-radius: 9px;}
+    0%    {background-color: #18861e; left: 0px; top: 0px; border-radius: 0px; transform: rotate(200deg);}
+    20%   {background-color: #18861e; left: -47vw; top: 40vh; border-radius: 1px; transform: rotate(400deg);}
+    40%   {background-color: #18861e; left: -95vw; top: 80vh; border-radius: 2px; transform: rotate(600deg);}
+    50%   {background-color: #18861e; left: -0vw; top: 80vh; border-radius: 3px; transform: rotate(800deg);}
+    60%   {background-color: #18861e; left: -40vw; top: 80vh; border-radius: 4px; transform: rotate(1000deg);}
+    70%   {background-color: #18861e; left: -60vw; top: 80vh; border-radius: 5px; transform: rotate(1200deg);}
+    80%   {background-color: #18861e; left: -40vw; top: 0vh; border-radius: 6px; transform: rotate(1400deg);}
+    90%   {background-color: #18861e; left: -60vw; top: 50vh; border-radius: 7px; transform: rotate(1600deg);}
+    100%  {background-color: #ffffff; left: -80vw; top: 70vh; border-radius: 9px; transform: rotate(0deg);}
 }
 
+@keyframes bord {
+    0%   {border-color: #ffffff; background-color: #ffffff;}
+    100% {border-color: #0f5012; background-color: #18861e;}
+}
 
-
-
+@keyframes escr {
+    0%   {opacity: 0%;}
+    100% {opacity: 100%;}
+}
